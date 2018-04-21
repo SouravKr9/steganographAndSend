@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta charset="ISO-8859-1">
+<title>Decryption</title>
+<style>
+	.form{
+		width:40%;
+		margin-top: 200px;
+		margin-left: 200px;
+		color: #ffffff;
+		
+		border-radius: 15px;
+		opacity: 0.8;
+	}
+	
+	body{
+		background-image: url("http://www.safenetat.com/sebin/v/l/banner-encryption-locks.jpg");
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  	<div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://localhost:8090/cdac_project/index.html">AlesB</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="http://localhost:8090/cdac_project/crossroads.html">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="http://localhost:8090/cdac_project/aboutUs.html">About Us</a></li>
+      
+    </ul>
+  	</div>
+	</nav>
+	<div class="form">
+	 <h3 align="center ">File Upload:</h3>
+      <form action = "decryptaes" method = "post" enctype = "multipart/form-data">
+      	<div class="form-group">
+      	<label for="file">Select a image to upload: </label>
+         <input type = "file" name = "file" class="form-control" size = "50" />
+         <br />
+         <center>
+         <button type = "submit" class="btn btn-primary">Decode</button>
+         </center>
+         </div>
+      </form>
+	</div>
+</body>
+</html>

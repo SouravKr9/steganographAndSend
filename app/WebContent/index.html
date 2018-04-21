@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="google-signin-client_id" content="765854401552-3hm4fhhghdu0srovem2u3jpn3o1ustj4.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    function onSignIn(googleUser) {
+    	//window.alert("method called");
+        var profile = googleUser.getBasicProfile();
+        //console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        //console.log('Name: ' + profile.getName());
+        //console.log('Image URL: ' + profile.getImageUrl());
+        //console.log('Email: ' + profile.getEmail());
+        window.location = "http://localhost:8090/cdac_project/crossroads.html";
+}
+    </script>
+    <style>
+      .intro{
+      	width: 40%;
+      	margin-top: 230px;
+      	margin-left: 120px;
+      	float: left;
+      	border-radius: 15px;
+      	opacity: 0.9;
+      	color: #ffffff;
+      }
+      .business{
+      	border-radius: 15px;
+      	width: 40%;
+		max-width: 75em;
+		margin: 0 auto;
+		position: relative;
+      	color: #666666;
+      	background-color: #f2f2f2;
+      	position:absolute;
+      	margin-left: 690px;
+      	margin-top: 330px;
+      	float: right;
+      	opacity: 0.5;
+      }
+      .jumbotron{
+      	background-color:transparent !important; 
+      }
+      body{
+      	background-color: #0d0d0d;
+      }
+    </style>
+  </head>
+  <title>Verify to Continue</title>
+  <body>
+  	<div class="intro container">
+  	<div class="jumbotron">
+  		<h1>AlesB</h1>
+  		<p>Send your messages without the fear of getting eavesdropped
+  		or tapped.</p>
+  	</div>
+  	</div>
+  	<div class="business">
+  		
+  		<h3 align="center">Sign in to continue...</h3>
+  		
+      <div class="g-signin2 btn btn-block" data-onsuccess="onSignIn"></div>
+	</div>
+  </body>
+</html>
